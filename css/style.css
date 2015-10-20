@@ -18,12 +18,18 @@ html, body{
 .container:after {
  clear: both;
 }
-.one-half, .one-third, .one-fourth {
+.one-half, .one-fourth {
  width:96%;
  float:left;
  position:relative;
  min-height: 1px;
  margin:0 2% 20px;
+}
+.one-third {
+  float:left;
+  position:relative;
+  min-height: 1px;
+  margin:0;
 }
 @media (min-width: 768px) {
  .container {
@@ -38,7 +44,7 @@ html, body{
    width:46%;
  }
  .one-third {
-   width:29.33333%;
+   width:33.33333%;
  }
  .one-fourth {
    width:21%;
@@ -112,17 +118,95 @@ header nav ul li a {
   background: url(../images/pattern.png) right -5em no-repeat;
   font-family: 'Sorts Mill Goudy', serif;
   color: #4A4A4A;
+  padding:2em 0;
 }
+.about .text-about {
+  width:50%;
+  margin-left: 20%;
+  text-align: center;
+}
+
 .about ul {
   display: block;
   padding:0;
 }
+
 .about ul li {
   display:inline-block;
   list-style-type: none;
   text-align: center;
   text-transform: uppercase;
+  margin:10px 20px;
 }
 .about ul li img {
   display: block;
+  margin-bottom: 10px;
+}
+li.one-third {
+  list-style-type: none;
+  padding:0;
+  margin:0;
+  display:inline-block;
+}
+.showcase {
+  display:block;
+  position:relative;
+}
+.showcase:before,
+.showcase:after {
+ content: " ";
+ display: table;
+}
+.showcase:after {
+ clear: both;
+}
+.showcase ul {
+  margin:0;
+  padding:0;
+}
+
+.herb {
+  background: url(../images/Herb-Bckgrd.png) top center no-repeat;
+  font-family: 'Sorts Mill Goudy', serif;
+  background-size:cover;
+  color: #4A4A4A;
+  padding:40px;
+
+}
+.olives {
+  background: url(../images/Olives-Bckgrd.png) top center no-repeat;
+  font-family: 'Sorts Mill Goudy', serif;
+  background-size:cover;
+  color: #4A4A4A;
+  padding:40px;
+
+}
+.flowers {
+  background: url(../images/Peony-Bckgrd.png) top center no-repeat;
+  font-family: 'Sorts Mill Goudy', serif;
+  background-size:cover;
+  color: #4A4A4A;
+  padding:40px;
+
+}
+.herb div, .olives div, .flowers div {
+  background:rgba(255,255,255, 0.8);
+  padding:20px;
+}
+.herb div h3, .olives div h3, .flowers div h3 {
+  font-size:26px;
+  text-transform: uppercase;
+  font-weight: 100;
+  padding:20px 20px 0px;
+  margin:0;
+  text-align: center;
+}
+.herb div p, .olives div p, .flowers div p {
+  padding:0px 20px 20px;
+  margin:0;
+  font-family:Helvetica, Arial, sans-serif;
+  text-align: center;
+  font-size: 16.77px;
+  color: rgba(73,73,73,0.70);
+  line-height: 20px;
 }

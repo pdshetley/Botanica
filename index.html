@@ -8,6 +8,9 @@
   <link href='https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy:400,400italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
 </head>
 <body>
   <header>
@@ -91,17 +94,29 @@
 
     <section class="slider">
       <div class="container">
-        <!-- Box for Marketing Message -->
-        <div>
-          
+        <!-- Points and Learn More -->
+        <div class="text-points">
+          <h3>Collect Points<br/> and<br/> Make a Difference</h3>
+         <p>Learn More</p>
         </div>
 
         <!-- Slider of Products -->
-        <div>
-          
+        <div class="carousel-wrapper">
+        <div class="carousel">
+            <div><a href=""><img src="images/Tube-slide.png"><br/>Purify $24.00</a></div>
+            <div><a href=""><img src="images/Bottle-slide.png"><br/>Nourish $22.00</a></div>
+            <div><a href=""><img src="images/Pink-Box-slide.png"><br/>Protect $32.00</a></div>
+            <div><a href=""><img src="images/Blue-Box-slide.png"><br/>Protect $32.00</a></div>
+            <div><a href=""><img src="images/Tube-slide.png"><br/>Purify $24.00</a></div>
+            <div><a href=""><img src="images/Bottle-slide.png"><br/>Nourish $22.00</a></div>
+            <div><a href=""><img src="images/Pink-Box-slide.png"><br/>Protect $32.00</a></div>
+            <div><a href=""><img src="images/Blue-Box-slide.png"><br/>Protect $32.00</a></div>
+        </div>
         </div>
       </div>
     </section>
+
+  
       
   </main>
   
@@ -135,6 +150,18 @@
     </div>
   </footer>
   <div class="bottombar"></div>
-
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.carousel').slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 4
+      });
+    });
+        
+  </script>
 </body>
 </html>

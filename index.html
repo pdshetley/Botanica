@@ -61,32 +61,38 @@
         <ul>
           <li class="one-third">
             <div class="herb">
-              <div>
+              <div class="text-showcase">
               <h3>Purify</h3>
-                <p>Nature's organic ingredients<br/> cleanse gently and kindly.<br/> Botanica Cleansers are free<br/> of harmful additives<br/> and support all skin types.<br/> Be loving to your skin.</p>
+                <p>Nature's organic ingredients cleanse gently and kindly. Botanica Cleansers are free of harmful additives and support all skin types. Be loving to your skin.</p>
               </div>
-              <img src="images/purify-tube.png" />
-              <a href="#">Shop Cleansers</a>
+              <div class="transparency">
+                <img src="images/purify-tube.png" />
+                <a href="#">Shop Cleansers</a>
+              </div>
             </div>
           </li>
           <li class="one-third">
               <div class="olives">
-                <div>
+                <div class="text-showcase">
                 <h3>Nourish</h3>
-                  <p>Flower and plant therapy is<br/> nature's  natural healer.<br/> Botanica Toners deliver<br/>healing and strengthening<br/> nutrients to stressed,<br/> overworked, or parched skin.</p>
+                  <p>Flower and plant therapy is nature's natural healer. Botanica Toners deliver healing and strengthening nutrients to stressed, overworked, or parched skin.</p>
                 </div>
-                <img src="images/nourish-bottle.png" />
-                <a href="#">Shop Toners</a>
+                <div class="transparency">
+                  <img src="images/nourish-bottle.png" />
+                  <a href="#">Shop Toners</a>
+                </div>
               </div>
           </li>
           <li class="one-third">
             <div class="flowers">
-              <div>
+              <div class="text-showcase">
               <h3>Protect</h3>
-                <p>Botanica Moisturizers hydrate<br/> and provide protection<br/> against environmental factors<br/> that can age skin<br/> prematurely. Keep skin safe,<br/> soft, and glowing.</p>
+                <p>Botanica Moisturizers hydrate and provide protection against environmental factors that can age skin prematurely. Keep skin safe, soft, and glowing.</p>
               </div>
-              <img src="images/protect-box.png" />
-              <a href="#">Shop Moisturizers</a>
+              <div class="transparency">
+                <img src="images/protect-box.png" />
+                <a href="#">Shop Moisturizers</a>
+              </div>
             </div>
           </li>
         </ul>
@@ -103,14 +109,14 @@
         <!-- Slider of Products -->
         <div class="carousel-wrapper">
         <div class="carousel">
-            <div><a href=""><img src="images/Tube-slide.png"><br/>Purify $24.00</a></div>
-            <div><a href=""><img src="images/Bottle-slide.png"><br/>Nourish $22.00</a></div>
-            <div><a href=""><img src="images/Pink-Box-slide.png"><br/>Protect $32.00</a></div>
-            <div><a href=""><img src="images/Blue-Box-slide.png"><br/>Protect $32.00</a></div>
-            <div><a href=""><img src="images/Tube-slide.png"><br/>Purify $24.00</a></div>
-            <div><a href=""><img src="images/Bottle-slide.png"><br/>Nourish $22.00</a></div>
-            <div><a href=""><img src="images/Pink-Box-slide.png"><br/>Protect $32.00</a></div>
-            <div><a href=""><img src="images/Blue-Box-slide.png"><br/>Protect $32.00</a></div>
+            <div><a href=""><img src="images/Tube-slide.png">Purify<br/> $24.00</a></div>
+            <div><a href=""><img src="images/Bottle-slide.png">Nourish<br/> $22.00</a></div>
+            <div><a href=""><img src="images/Pink-Box-slide.png">Protect<br/> $32.00</a></div>
+            <div><a href=""><img src="images/Blue-Box-slide.png">Protect<br/> $32.00</a></div>
+            <div><a href=""><img src="images/Tube-slide.png">Purify<br/> $24.00</a></div>
+            <div><a href=""><img src="images/Bottle-slide.png">Nourish<br/> $22.00</a></div>
+            <div><a href=""><img src="images/Pink-Box-slide.png">Protect<br/> $32.00</a></div>
+            <div><a href=""><img src="images/Blue-Box-slide.png">Protect<br/> $32.00</a></div>
         </div>
         </div>
       </div>
@@ -158,7 +164,32 @@
       $('.carousel').slick({
         infinite: true,
         slidesToShow: 4,
-        slidesToScroll: 4
+        slidesToScroll: 4,
+        responsive: [
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+        ]
       });
     });
         

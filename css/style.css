@@ -78,6 +78,10 @@ header nav ul li {
 header nav ul li a {
   color:#000;
 }
+header nav ul li a:hover {
+  color: #000;
+  font-weight: 700;
+} 
 .hero {
   background: url(../images/hero.jpg) top center no-repeat;
   background-size: cover;
@@ -282,6 +286,9 @@ li.one-third {
 .text-points p {
   font-size: 19px;
 }
+.text-points p:hover {
+  color: #fff; 
+}
 .slider {
   background: url(../images/sliderbg.png) center 36em no-repeat;
   padding-bottom: 6em;
@@ -302,6 +309,10 @@ nav ul li {
   list-style-type: none;
   margin:5px 10px;
 }
+.nav-footer ul li a:hover {
+  color: #EBABB2; 
+}
+
 .subfooter {
   margin:0 0 14px;
   padding:0;
@@ -324,6 +335,9 @@ nav ul li {
 .subfooter nav ul li a {
   font-weight: 100;
   font-size:14px;
+}
+.subfooter nav ul li a:hover {
+  color: #EBABB2; 
 }
 footer nav ul li a {
   color:#fff;
